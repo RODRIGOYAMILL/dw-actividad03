@@ -8,7 +8,7 @@
   </label>
 </div>-->
 
-<h2>Mis Heroes</h2>
+<!--<h2>Mis Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero"
@@ -27,4 +27,29 @@
     </label>
   </div>
 
-</div>
+</div>-->
+
+<!--Actualizamos y los cambios agregados son los botones-->
+
+<!--<h2>Mis Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+      <span class="badge">{{hero.id}}</span>
+      <span class="name">{{hero.name}}</span>
+    </button>
+  </li>
+</ul>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
+
+
+<!-- Muestra la lista de jugadores -->
+<h2>Jugadores Del F.C. Barcelona 2015</h2>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"> <!-- Iterar sobre la lista de jugadores -->
+    <a routerLink="/detail/{{hero.id}}"> <!-- Enlace para dirigirse a la página de detalles del jugadores -->
+      <span class="badge">{{hero.id}}</span> {{hero.name}} <!-- Mostrar el ID y el nombre del jugadores -->
+    </a>
+  </li>
+</ul>

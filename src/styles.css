@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+  color: rgb(231, 235, 238);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+h2, h3 {
+  color: #f30a0a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  
+}
+
+body {
+  margin: 2em;
+  background-image: url('assets/barca.jpg'); /* imagen de fondo  y colores de la letras de atributos*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Cambria, Georgia, serif;
+  color: #eee5e5;
+}
+
+input[type="text"], button {
+  font-family: Cambria, Georgia, serif;
+  color: #333;
+}
+
+button {
+  background-color: #e7dddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:disabled {
+  background-color: #030303;
+  color: #f5f0f0;
+  cursor: auto;
+}
+
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}

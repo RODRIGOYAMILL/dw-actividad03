@@ -1,0 +1,31 @@
+
+<!--<div *ngIf="hero">
+
+    <h2>Detalles {{hero.name | uppercase}}</h2>
+    <div><span>Id: </span>{{hero.id}}</div>
+    <div>
+      <label for="hero-name">Nombre</label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="Nombre">
+    </div>
+  
+  </div>-->
+
+
+  <!-- DETALLES DE LOS JUGADORES -->
+  <div *ngIf="hero">
+    <h2>{{hero.name | uppercase}} Detalles</h2>
+    <br>
+    <img [src]="hero.image" alt="image">
+    <div><span>Id: </span>{{hero.id}}</div> <!-- Muestra el ID del héroe -->
+    <div>
+      <label for="hero-name">Nombre Jugadores: </label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="Nombre Héroe" />
+    </div> <!-- Muestra  el nombre del jugador -->
+    <div><label>Dorsal: </label>{{hero.dorsal}}</div> <!-- Muestra el número del dorsal del jugador -->
+    <div><label>Fecha de nacimiento: </label>{{hero.dateOfBirth}}</div> <!-- Muestra la fecha de nacimiento del jugador -->
+    <div><label>Altura: </label>{{hero.height}}</div> <!-- Muestra la altura del jugador -->
+    <div><label>Peso: </label>{{hero.weight}}</div> <!-- Muestra el peso del jugador -->
+    <div><label>Nacionalidad: </label>{{hero.nationality}}</div> <!-- Muestra la nacionalidad del judagor -->
+    <div><label>Posición: </label>{{hero.position}}</div> <!-- Muestra la posición del jugador -->
+    <button type="button" (click)="goBack()">Atrás</button> <!-- Botón para volver atrás -->
+  </div>
